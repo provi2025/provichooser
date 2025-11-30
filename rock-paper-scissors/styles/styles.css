@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap");
+
 :root {
   --default-padding: 20px;
   --default-border-radius: 10px;
@@ -11,15 +12,10 @@
   --font-weight-semi-bold: 600;
   --font-weight-bold: 700;
 
-  /* 🔵 ORIGINAL */
-  /* --color-dark-text: hsl(229, 25%, 31%); */
-  /* --color-score-text: hsl(229, 64%, 46%); */
-  /* --color-header-outline: hsl(217, 16%, 45%); */
-
-  /* 🟢 PROVINZIAL ERSATZ */
-  --color-dark-text: #003A24;         /* dunkler Grün-Text */
+  /* Provinzial Farben */
+  --color-dark-text: #003A24;         /* Dunkler Grün-Text */
   --color-score-text: #009639;        /* Score in Provinzial-Grün */
-  --color-header-outline: #8FD4B3;    /* hellgrüner Rand */
+  --color-header-outline: #8FD4B3;    /* Hellgrüner Rand */
 
   --max-width: 600px;
   --game-content-height: 350px;
@@ -33,8 +29,7 @@
 }
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 img[src=''] {
@@ -47,13 +42,7 @@ img[src=''] {
   align-items: center;
   font-family: var(--font-family);
   padding: var(--default-padding);
-
-  /* 🔵 ORIGINAL */
-  /* background: linear-gradient(#1f3756, #141539); */
-
-  /* 🟢 PROVINZIAL-GRADIENT */
   background: linear-gradient(#007944, #004D28);
-
   min-height: 100vh;
   color: white;
   overflow: hidden;
@@ -277,7 +266,6 @@ img[src=''] {
   font-size: var(--font-size-2xLarge);
   color: var(--color-dark-text);
 }
-
 /* ---------------------------------------------------------
    🟢 PROVINZIAL-FARBEN FÜR PAPER / ROCK / SCISSORS
    --------------------------------------------------------- */
@@ -305,7 +293,6 @@ img[src=''] {
   right: 0;
   top: 0;
   bottom: 0;
-
   background: linear-gradient(#66C68D, #5BBE84);
 }
 .gameContent__gameChoice--isPaper:after {
@@ -327,7 +314,6 @@ img[src=''] {
   right: 0;
   top: 0;
   bottom: 0;
-
   background: linear-gradient(#009639, #007D30);
 }
 .gameContent__gameChoice--isRock:after {
@@ -349,7 +335,6 @@ img[src=''] {
   right: 0;
   top: 0;
   bottom: 0;
-
   background: linear-gradient(#006F2C, #005521);
 }
 .gameContent__gameChoice--isScissors:after {
@@ -375,7 +360,7 @@ img[src=''] {
   pointer-events: none;
 }
 
-	gameContent__gameChoice--isActive {
+.gameContent__gameChoice--isActive {
   opacity: 1 !important;
   visibility: visible !important;
   transform: scale(var(--game-choice-active-scale)) rotate(360deg) translate(calc(var(--game-choice-x-position) * var(--animation-ratio) * -1), 75px);
@@ -404,7 +389,6 @@ img[src=''] {
   border-radius: 50%;
   border-top: 6px solid rgba(0, 0, 0, 0.1);
 }
-
 .gameContent__result {
   display: flex;
   flex-direction: column;
@@ -420,6 +404,7 @@ img[src=''] {
 .gameContent__resultText {
   font-size: var(--font-size-2xLarge);
   margin-bottom: var(--default-border-radius);
+  color: var(--color-dark-text);
 }
 
 .gameContent__resultButton {
@@ -432,6 +417,27 @@ img[src=''] {
   font-size: var(--font-size-normal);
   text-transform: uppercase;
   letter-spacing: 2px;
+  cursor: pointer;
   z-index: 1;
+  transition: background-color 0.3s, transform 0.2s;
 }
-/*# sourceMappingURL=styles.css.map */
+
+.gameContent__resultButton:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+}
+
+/* Countdown Text */
+.gameContent__countdownText {
+  font-size: var(--font-size-2xLarge);
+  color: var(--color-dark-text);
+  text-align: center;
+}
+
+/* Animation helper classes */
+.gameContent--isLost {
+  transition-delay: calc(var(--timing-animation) * 2);
+  filter: grayscale(1) opacity(0.7);
+}
+
+/* End of CSS */
