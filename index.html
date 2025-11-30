@@ -1,40 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1, user-scalable=no"
-		/>
-		<title>Provi Chooser</title>
-		<link rel="manifest" href="manifest.webmanifest" />
-		<link rel="icon" sizes="48x48" href="images/logo-48.png" />
-		<link rel="icon" sizes="96x96" href="images/logo-96.png" />
-		<link rel="icon" sizes="144x144" href="images/logo-144.png" />
-		<link rel="icon" sizes="192x192" href="images/logo-192.png" />
-		<link rel="apple-touch-icon" href="images/logo-192-opaque.png" />
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta
-			name="apple-mobile-web-app-status-bar-style"
-			content="black-translucent"
-		/>
-		<meta name="theme-color" content="#208a15" />
-		<link rel="stylesheet" href="index.css" />
-		<script type="module" src="index.js"></script>
-	</head>
-	<body>
-		<canvas id="board"></canvas>
-		<p id="description">
-			Immer da, immer nah. živjeli!
-		</p>
-		<div
-			id="live-region"
-			aria-live="assertive"
-			class="visually-hidden"
-		></div>
-		<p id="version"></p>
-		<p id="update-available" hidden>
-			Update available. <a href="">Reload</a> to apply.
-		</p>
-	</body>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Provinzial Mini-Spiele</title>
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header class="header">Provinzial Mini-Spiele</header>
+  <main class="container">
+    <h2>Wähle dein Spiel:</h2>
+    <ul class="game-list">
+      <li><a href="chooser/">Zufall-Spieler-Chooser</a></li>
+      <li><a href="rock-paper-scissors/">Schere-Stein-Papier</a></li>
+      <li><a href="random-number/">Zufallszahlen-Generator</a></li>
+      <li><a href="spin-wheel/">Glücksrad</a></li>
+    </ul>
+  </main>
+</body>
 </html>
