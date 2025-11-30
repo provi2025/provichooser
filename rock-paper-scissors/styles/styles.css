@@ -46,8 +46,8 @@ img[src=''] {
           align-items: center;
   font-family: var(--font-family);
   padding: var(--default-padding);
-  background: -webkit-gradient(linear, left top, left bottom, from(#1f3756), to(#141539));
-  background: linear-gradient(#1f3756, #141539);
+  background: -webkit-gradient(linear, left top, left bottom, from(#5dd167), to(#21d61b));
+  background: linear-gradient(#165e32, #509c63);
   min-height: 100vh;
   color: white;
   overflow: hidden;
