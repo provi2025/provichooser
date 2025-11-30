@@ -6,62 +6,102 @@
   --prov-shadow: rgba(0, 0, 0, 0.15);
 }
 
-body {
+/* Global reset */
+* {
   margin: 0;
-  background: var(--prov-bg);
-  font-family: "Arial", sans-serif;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Prevent ANY horizontal scroll */
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background: var(--prov-bg);
+  font-family: "Arial", sans-serif;
+  text-align: center;
+}
+
+/* Header */
 .header {
   background: var(--prov-green);
   color: white;
-  padding: 20px;
-  font-size: 26px;
+  padding: 18px 10px;
+  font-size: 22px;
   font-weight: bold;
-  text-align: center;
-  letter-spacing: 1px;
-  box-shadow: 0 4px 10px var(--prov-shadow);
+  letter-spacing: 0.5px;
+  box-shadow: 0 3px 12px var(--prov-shadow);
 }
 
+/* Grid layout */
 .grid {
-  max-width: 980px;
-  margin: 40px auto;
-  padding: 0 20px;
+  width: 100%;
+  max-width: 100%;
+  margin: 30px auto;
+  padding: 0 15px;
 
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
 }
 
+/* Cards */
 .card {
   background: var(--prov-card);
-  padding: 25px;
+  padding: 22px;
   border-radius: 16px;
-  text-align: center;
   text-decoration: none;
   color: var(--prov-green-dark);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
   box-shadow: 0 6px 15px var(--prov-shadow);
   transition: transform .2s ease, box-shadow .2s ease;
 }
 
-.card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+/* Hover only on desktop */
+@media (hover: hover) {
+  .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  }
 }
 
 .icon {
   font-size: 45px;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .title {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 
 .subtitle {
   font-size: 14px;
   color: #333;
+}
+
+/* MOBILE SPECIAL FIX: prevent zoom, scaling issues */
+@media screen and (max-width: 480px) {
+  .header {
+    font-size: 20px;
+    padding: 14px;
+  }
+
+  .icon {
+    font-size: 38px;
+  }
+
+  .card {
+    padding: 18px;
+  }
 }
