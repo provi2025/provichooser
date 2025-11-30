@@ -5,7 +5,7 @@
     font-family: "Roboto", serif;
     list-style: none;
     letter-spacing: 0.5px;
-    color: rgb(40, 141, 65);
+    color: rgb(34, 102, 34); /* Dunkelgrün */
     scrollbar-width: thin;
 }
 
@@ -17,7 +17,6 @@ body {
 .burger {
     display: none;
 }
-
 
 main {
     display: flex;
@@ -42,10 +41,12 @@ h1 {
     text-transform: uppercase;
     font-size: 36px;
     cursor: default;
+    color: rgb(0, 102, 51); /* kräftiges Grün */
 }
 
 h2 {
     cursor: default;
+    color: rgb(0, 128, 64); /* mittleres Grün */
 }
 
 .studentsName {
@@ -56,7 +57,7 @@ h2 {
     align-items: center;
     font-weight: 600;
     font-size: larger;
-    color: rgb(40, 83, 19);
+    color: rgb(0, 77, 38); /* dunkles Grün für Namen */
 }
 
 input::-webkit-search-decoration,
@@ -78,7 +79,7 @@ input::-webkit-search-results-decoration {
 
 .searchBox input,
 .searchBox button {
-    background-color: #49c949;
+    background-color: rgb(102, 204, 102); /* helles Grün */
     border: none;
     outline: none;
 }
@@ -124,8 +125,8 @@ input::-webkit-search-results-decoration {
     height: 500px;
     position: relative;
     border-radius: 50%;
-    border: 1px solid rgb(52, 158, 38);
-    box-shadow: 0px 0px 8px 5px gray;
+    border: 1px solid rgb(0, 153, 0); /* Grün für Rand */
+    box-shadow: 0px 0px 8px 5px rgb(0, 102, 0);
 }
 
 .sectorLabels {
@@ -143,15 +144,15 @@ input::-webkit-search-results-decoration {
     left: 37%;
     font-size: 14px;
     line-height: 1;
-    color: black;
+    color: rgb(0, 77, 0); /* dunkles Grün für Labels */
     text-align: start;
     width: 130px;
 }
 
 .namesBlock {
     min-height: fit-content;
-    border: 1px solid rgb(18, 146, 50);
-    box-shadow: 0px 0px 8px 3px gray;
+    border: 1px solid rgb(0, 153, 0); /* Grüner Rahmen */
+    box-shadow: 0px 0px 8px 3px rgba(0,128,0,0.4);
     border-radius: 10px;
     padding: 30px;
     display: flex;
@@ -177,7 +178,7 @@ input[type='checkbox'] {
     appearance: none;
     cursor: pointer;
     background: #fff;
-    border: 2px solid #1f5310;
+    border: 2px solid rgb(0,102,0); /* dunkles Grün */
     height: 20px;
     width: 20px;
     border-radius: 6px;
@@ -196,7 +197,7 @@ input[type="checkbox"]::before {
 }
 
 input[type="checkbox"]:checked::before {
-    background-color: #12882f;
+    background-color: rgb(0,153,0); /* kräftiges Grün */
     height: 14px;
     width: 14px;
     border-radius: 4px;
@@ -207,21 +208,21 @@ input[type="checkbox"]:checked::before {
     padding: 10px 0px;
     outline: none;
     border: 1px solid transparent;
-    box-shadow: 0px 0px 3px 2px rgb(245, 212, 168);
-    background-color: bisque;
+    box-shadow: 0px 0px 3px 2px rgba(0,128,0,0.5);
+    background-color: rgb(102,204,102); /* helles Grün */
     border-radius: 6px;
     cursor: pointer;
     width: 160px;
     letter-spacing: 0.5px;
     margin-bottom: 10px;
     transition: 0.3s;
+    color: white;
 }
 
 .checkAllBtn:hover,
 .resetAllBtn:hover {
-    box-shadow: 0px 0px 3px 2px rgb(230, 124, 75);
-    background-color: rgb(247, 146, 63);
-    color: white;
+    box-shadow: 0px 0px 3px 2px rgb(0,102,0);
+    background-color: rgb(0,153,0);
     font-weight: 600;
 }
 
@@ -254,21 +255,20 @@ input[type="checkbox"]:checked::before {
     margin-top: 30px;
     outline: none;
     border: 1px solid transparent;
-    box-shadow: 0px 0px 3px 2px #9061cd;
-    background-color: #b98df3;
+    box-shadow: 0px 0px 3px 2px rgb(0,102,0);
+    background-color: rgb(0,153,0); /* kräftiges Grün */
     border-radius: 6px;
     cursor: pointer;
     font-weight: 800;
     font-size: 16px;
     line-height: 20px;
-    color: rgb(21, 31, 31);
+    color: white;
     transition: 0.3s;
 }
 
 .submitWheel:hover {
-    box-shadow: 0px 0px 3px 2px #8243D6;
-    background-color: #8243D6;
-    color: white;
+    box-shadow: 0px 0px 3px 2px rgb(0,128,0);
+    background-color: rgb(0,102,0);
     font-weight: 800;
     font-size: larger;
 }
@@ -287,7 +287,7 @@ input[type="checkbox"]:checked::before {
 .author hr {
     height: 30px;
     width: 1px;
-    background-color: gray;
+    background-color: rgb(0,102,0);
     border: none;
     margin-right: 6px;
 }
@@ -295,7 +295,7 @@ input[type="checkbox"]:checked::before {
 .author p {
     width: min-content;
     font-size: 10px;
-    color: gray;
+    color: rgb(0,102,0);
 }
 
 .author a {
