@@ -12,7 +12,7 @@ body{
 #button1{
     cursor: pointer;
     font-size: 2.5em;
-    color: rgb(42, 136, 24);
+    color: rgb(25, 27, 25);
     background-color: green;
     transition: 0.5s;
 }
