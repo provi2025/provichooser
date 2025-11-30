@@ -79,7 +79,7 @@ input::-webkit-search-results-decoration {
 
 .searchBox input,
 .searchBox button {
-    background-color: rgb(102, 204, 102); /* helles Grün */
+    background-color: rgb(100, 121, 100); /* helles Grün */
     border: none;
     outline: none;
 }

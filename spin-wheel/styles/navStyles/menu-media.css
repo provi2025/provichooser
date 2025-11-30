@@ -74,7 +74,7 @@
         top: 60px;
         /* Смещение вниз от бургер-кнопки */
         right: 0px;
-        background-color: rgb(228, 212, 244);
+        background-color: rgb(37, 158, 43);
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         border-radius: 0px;
         width: 100%;
@@ -102,6 +102,6 @@
     }
 
     .menu li:hover {
-        background-color: rgb(246, 202, 165);
+        background-color: rgb(15, 88, 37);
     }
 }
