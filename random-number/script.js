@@ -2,7 +2,7 @@ const a = document.getElementById("button1")
 const b = document.getElementById("label1")
 let generatedNum
 const min = 1
-const max = 100
+const max = 1000
 a.onclick = function(){
   generatedNum = Math.floor(Math.random() * max) + min
   b.textContent = generatedNum
