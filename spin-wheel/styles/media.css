@@ -78,7 +78,7 @@
     }
 
     input[type="checkbox"]:checked::before {
-        background-color: #8243D6;
+        background-color: #8edd92;
         height: 18px;
         width: 18px;
     }
