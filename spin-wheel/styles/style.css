@@ -5,7 +5,7 @@
     font-family: "Roboto", serif;
     list-style: none;
     letter-spacing: 0.5px;
-    color: rgb(21, 31, 31);
+    color: rgb(40, 141, 65);
     scrollbar-width: thin;
 }
 
@@ -56,7 +56,7 @@ h2 {
     align-items: center;
     font-weight: 600;
     font-size: larger;
-    color: rgb(123, 6, 39);
+    color: rgb(40, 83, 19);
 }
 
 input::-webkit-search-decoration,
@@ -78,7 +78,7 @@ input::-webkit-search-results-decoration {
 
 .searchBox input,
 .searchBox button {
-    background-color: #e6e3e3;
+    background-color: #49c949;
     border: none;
     outline: none;
 }
@@ -124,7 +124,7 @@ input::-webkit-search-results-decoration {
     height: 500px;
     position: relative;
     border-radius: 50%;
-    border: 1px solid gray;
+    border: 1px solid rgb(52, 158, 38);
     box-shadow: 0px 0px 8px 5px gray;
 }
 
@@ -150,7 +150,7 @@ input::-webkit-search-results-decoration {
 
 .namesBlock {
     min-height: fit-content;
-    border: 1px solid gray;
+    border: 1px solid rgb(18, 146, 50);
     box-shadow: 0px 0px 8px 3px gray;
     border-radius: 10px;
     padding: 30px;
@@ -177,7 +177,7 @@ input[type='checkbox'] {
     appearance: none;
     cursor: pointer;
     background: #fff;
-    border: 2px solid #8243D6;
+    border: 2px solid #1f5310;
     height: 20px;
     width: 20px;
     border-radius: 6px;
@@ -196,7 +196,7 @@ input[type="checkbox"]::before {
 }
 
 input[type="checkbox"]:checked::before {
-    background-color: #8243D6;
+    background-color: #12882f;
     height: 14px;
     width: 14px;
     border-radius: 4px;
