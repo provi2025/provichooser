@@ -162,6 +162,11 @@ const choosePlayer = (function () {
 
 		draw();
 
+		//Sound abspielen
+		const audio = new Audio('winner-sound.mp3');
+		audio.volume = 0.5;
+		audio.play();
+
 		ariaLiveLog(`Player ${chosenPlayer} chosen`);
 	};
 
